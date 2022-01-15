@@ -1,0 +1,43 @@
+.checkbox {
+  transition: border var(--animation-duration-hw-05) var(--bezier-hw-05);
+  &:checked + .checkbox-field__label .checkbox-field__check {
+    background: var(--accent-color);
+    border: transparent;
+    transition: background-color var(--animation-duration-hw-05) var(--bezier-hw-05);
+  }
+}
+
+.checkbox-field__label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.checkbox-field__check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--title-text-color);
+  border-radius: 2px;
+  width: 16px;
+  height: 15px;
+  margin-right: 5px;
+  fill: var(--white-bgc-text-color);
+}
+  
+.checkbox-field__text {
+  @include font-normal;
+  font-family: Roboto;
+  font-style: normal;
+  color: var(--primary-text-color);
+}
+  
+.checkbox-field__link {
+  @include font-normal;
+  font-family: Roboto;
+  font-style: normal;
+  color: var(--accent-color);
+}

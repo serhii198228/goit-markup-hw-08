@@ -1,0 +1,66 @@
+.button {
+    color: var(--title-text-color);
+    background-color: var(--secondary-bgc);
+    font-size: 16px;
+    line-height: 1.87;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+    padding: 6px 22px;
+    border: 0;
+    transition: background-color var(--animation-duration-hw-05) var(--bezier-hw-05), fill var(--animation-duration-hw-05) var(--bezier-hw-05);
+      &:hover,
+      &:focus {
+        color: var(--white-bgc-text-color);
+        background: var(--accent-color);
+        border-radius: 4px;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+          0px 2px 2px rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
+      }
+  }
+    
+  .button.primary {
+    color: var(--white-bgc-text-color);
+    background-color: var(--accent-color);
+    transition: background-color var(--animation-duration-hw-05) var(--bezier-hw-05), fill var(--animation-duration-hw-05) var(--bezier-hw-05);
+      &:hover,
+      &:focus {
+        color: var(--white-bgc-text-color);
+        background: var(--accent-color);
+        border-radius: 4px;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+          0px 2px 2px rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
+      }
+  }
+  .button.secondary {
+    color: var(--title-text-color);
+    background-color: var(--secondary-bgc);
+    transition: background-color var(--animation-duration-hw-05) var(--bezier-hw-05), fill var(--animation-duration-hw-05) var(--bezier-hw-05);
+      &:hover,
+      &:focus {
+        color: var(--white-bgc-text-color);
+        background: var(--accent-color);
+        border-radius: 4px;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+          0px 2px 2px rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
+      }
+  }
+  
+  .button-group {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+    
+  }
+  
+  .group-item {
+    display: flex;
+    margin-left: 6px;
+    transition: color var(--animation-duration-hw-05) var(--bezier-hw-05);
+  }

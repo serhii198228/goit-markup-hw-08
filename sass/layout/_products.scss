@@ -1,0 +1,31 @@
+  .products {
+    display: flex;
+    margin-top: 50px;
+    margin-left: -30px;
+}
+    
+  .products {
+      .products__item {
+      display: flex;
+      flex-basis: calc(100% / 3 - 30px);
+      margin-left: 30px;
+      position: relative;
+    }
+  }
+
+  .products__title {
+    color: var(--white-bgc-text-color);
+    position: absolute;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: uppercase;
+    bottom: 0;
+    font-size: 14px;
+    background: rgba(47, 48, 58, 0.8);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

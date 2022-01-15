@@ -1,0 +1,35 @@
+.clients {
+    display: flex;
+    margin-top: 50px;
+  }
+  
+  .clients__item {
+    width: 170px;
+    height: 92px;
+        &:not(:last-child) {
+        margin-right: 30px;
+      }
+  }
+  
+  .client__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border: solid 1px var(--icon-normal-color);
+    border-radius: 4px;
+    cursor: pointer;
+    border-color: hover var(--accent-color);
+    border-color: focus var(--accent-color);
+    color: var(--icon-normal-color);
+    transition: color var(--animation-duration-hw-05) var(--bezier-hw-05);
+      &:hover,
+      &:focus {
+      color: var(--accent-color);
+    }
+  }
+  
+  .client__logo {
+    fill: currentColor;
+  }

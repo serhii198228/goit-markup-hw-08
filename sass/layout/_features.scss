@@ -1,0 +1,74 @@
+.features {
+    padding-top: 94px;
+  }
+  
+  .features-list {
+    display: flex;
+  }
+  
+  .features-list__item {
+    margin-right: 30px;
+    width: 270px;
+    height: 251px;
+    justify-content: center;
+    width: 1200px;
+      &::before {
+        display: block;
+        content: '';
+        width: 270px;
+        height: 120px;
+        background-size: contain;
+        background-position: center;
+        background: #f5f4fa;
+        border-radius: 4px;
+      }
+  }
+  
+  .icon-attention::before {
+    background-image: url(../images/antenna-one.svg);
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+  
+  .icon-punctuality::before {
+    background-image: url(../images/clock-one.svg);
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+  
+  .icon-planning::before {
+    background-image: url(../images/diagram-one.svg);
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+  
+  .icon-technologies::before {
+    background-image: url(../images/astronaut-one.svg);
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+  
+  .features-list__title {
+    margin-bottom: 10px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--black-text-color);
+    margin-top: 30px;
+      &:last-child {
+        margin-right: 0;
+      }
+  }
+  
+  .features-list__text {
+    @include font-normal;
+    color: var(--primary-text-color);
+  }
+  

@@ -1,0 +1,76 @@
+.footer {
+    display: flex;
+    background: var(--hero-footer-bgc);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin: 0 auto;
+  }
+  
+  .container-footer {
+    display: flex;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+  }
+  
+  .footer-address {
+    margin-right: 70px;
+  }
+  
+  .footer-logo {
+    display: flex;
+    color: var(--white-bgc-text-color);
+    font-family: Raleway, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+  }
+  
+  .address {
+    color: var(--white-bgc-text-color);
+    background-color: var(--hero-footer-bgc);
+    @include font-normal;
+    text-decoration: none;
+    font-style: normal;
+    margin-top: 20px;
+  }
+  
+  .mail-footer {
+    padding-top: 9px;
+    font-style: normal;
+  }
+  
+  .tel-footer {
+    padding-top: 9px;
+    font-style: normal;
+  }
+  
+  .footer-mail {
+    color: var(--footer-phone-mail-text);
+    @include font-normal;
+    text-decoration: none;
+    font-style: normal;
+    transition: color var(--animation-duration-hw-05) var(--bezier-hw-05);
+      &:hover,
+      &:focus {
+      color: var(--accent-color);
+      background-color: var(--hero-footer-bgc);
+    }
+  }
+  
+  .footer-tel {
+    color: var(--footer-phone-mail-text);
+    @include font-normal;
+    text-decoration: none;
+    font-style: normal;
+    transition: color var(--animation-duration-hw-05) var(--bezier-hw-05);
+      &:hover,
+      &:focus {
+      color: var(--accent-color);
+      background-color: var(--hero-footer-bgc);
+    }
+  }
