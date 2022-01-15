@@ -138,12 +138,13 @@
         </div>
       </div>
     </header>
+
     <!-- Main content -->
     <main>
       <!-- Banner Hero -->
       <section class="banner">
-        <div class="banner-container">
-          <h1 class="banner-content">Эффективные решения для вашего бизнеса</h1>
+        <div class="banner__container">
+          <h1 class="banner__title">Эффективные решения для вашего бизнеса</h1>
           <button class="button-order" type="button" data-modal-open>
             Заказать услугу
           </button>
@@ -151,37 +152,56 @@
       </section>
 
       <!-- Features WebStudio -->
-      <section class="features">
-        <div class="container">
-          <!-- Visually hidden content -->
+      <section class="section">
+        <div class="container feature">
           <div class="visually-hidden">
             <h2 class="section__title">Особенности и преимущества WebStudio</h2>
           </div>
-          <ul class="features-list list">
-            <li class="features-list__item icon-attention">
-              <h3 class="features-list__title">Внимание к деталям</h3>
-              <p class="features-list__text">
+          <ul class="features__list list">
+            <li class="features__item">
+              <div class="features__image">
+                <svg class="features__icon" width="70" height="70">
+                  <use href="./images/sprite.svg#icon-antenna-one"></use>
+                </svg>
+              </div>
+              <h3 class="features__title">Внимание к деталям</h3>
+              <p class="features__text">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li class="features-list__item icon-punctuality">
-              <h3 class="features-list__title">Пунктуальность</h3>
-              <p class="features-list__text">
+            <li class="features__item">
+              <div class="features__image">
+                <svg class="features__icon" width="70" height="70">
+                  <use href="./images/sprite.svg#icon-clock-one"></use>
+                </svg>
+              </div>
+              <h3 class="features__title">Пунктуальность</h3>
+              <p class="features__text">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="features-list__item icon-planning">
-              <h3 class="features-list__title">Планирование</h3>
-              <p class="features-list__text">
+            <li class="features__item">
+              <div class="features__image">
+                <svg class="features__icon" width="70" height="70">
+                  <use href="./images/sprite.svg#icon-diagram-one"></use>
+                </svg>
+              </div>
+              <h3 class="features__title">Планирование</h3>
+              <p class="features__text">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li class="features-list__item icon-technologies">
-              <h3 class="features-list__title">Современные технологии</h3>
-              <p class="features-list__text">
+            <li class="features__item">
+              <div class="features__image">
+                <svg class="features__icon" width="70" height="70">
+                  <use href="./images/sprite.svg#icon-astronaut-one"></use>
+                </svg>
+              </div>
+              <h3 class="features__title">Современные технологии</h3>
+              <p class="features__text">
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
               </p>
@@ -190,11 +210,11 @@
         </div>
       </section>
       <!-- Products -->
-      <section class="section">
+      <section class="products__section">
         <div class="container">
           <h2 class="section__title">Чем мы занимаемся</h2>
 
-          <ul class="products list">
+          <ul class="products__list list">
             <li class="products__item">
               <a class="products__link link" href="">
                 <img
@@ -243,16 +263,33 @@
 
           <ul class="team list">
             <li class="team__item">
-              <img
-                src="./images/IgorDemyanenko.jpg"
-                width="270"
-                height="260"
-                alt="Игорь Демьяненко"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/img.jpg    1x,
+                    ./images/desktop/img@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/img.jpg    1x,
+                    ./images/tablet/img@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/img.jpg    1x,
+                    ./images/mobile/img@2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img src="./images/desktop/img.jpg" alt="Игорь Демьяненко" />
+              </picture>
               <div class="member">
                 <h3 class="member__name">Игорь Демьяненко</h3>
                 <p class="member__position">Product Designer</p>
-                <!-- Team social -->
                 <ul class="social list">
                   <li class="social__item">
                     <a class="social__link" href="#">
@@ -289,16 +326,33 @@
             </li>
 
             <li class="team__item">
-              <img
-                src="./images/OlhaRepina.jpg"
-                width="270"
-                height="260"
-                alt="Ольга Репина"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/img1.jpg    1x,
+                    ./images/desktop/img1@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/img1.jpg    1x,
+                    ./images/tablet/img1@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/img1.jpg    1x,
+                    ./images/mobile/img1@2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img src="./images/desktop/img1.jpg" alt="Ольга Репина" />
+              </picture>
               <div class="member">
                 <h3 class="member__name">Ольга Репина</h3>
                 <p class="member__position">Frontend Developer</p>
-                <!-- Team social -->
                 <ul class="social list">
                   <li class="social__item">
                     <a class="social__link" href="#">
@@ -333,16 +387,33 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/NikolayTarasov.jpg"
-                width="270"
-                height="260"
-                alt="Николай Тарасов"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/img2.jpg    1x,
+                    ./images/desktop/img2@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/img2.jpg    1x,
+                    ./images/tablet/img2@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/img2.jpg    1x,
+                    ./images/mobile/img2@2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img src="./images/desktop/img2.jpg" alt="Николай Тарасов" />
+              </picture>
               <div class="member">
                 <h3 class="member__name">Николай Тарасов</h3>
                 <p class="member__position">Marketing</p>
-                <!-- Team social -->
                 <ul class="social list">
                   <li class="social__item">
                     <a class="social__link" href="#">
@@ -377,16 +448,33 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/MikhailErmakov.jpg"
-                width="270"
-                height="260"
-                alt="Михаил Ермаков"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/img3.jpg    1x,
+                    ./images/desktop/img3@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/img3.jpg    1x,
+                    ./images/tablet/img3@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/img3.jpg    1x,
+                    ./images/mobile/img3@2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img src="./images/desktop/img3.jpg" alt="Михаил Ермаков" />
+              </picture>
               <div class="member">
                 <h3 class="member__name">Михаил Ермаков</h3>
                 <p class="member__position">UI Designer</p>
-                <!-- Team social -->
                 <ul class="social list">
                   <li class="social__item">
                     <a class="social__link" href="#">
@@ -430,7 +518,7 @@
         <div class="container">
           <h2 class="section__title">Постоянные клиенты</h2>
 
-          <ul class="clients list">
+          <ul class="clients__list list">
             <li class="clients__item">
               <a class="client__link link" href="">
                 <svg class="client__logo" width="106" height="60">
@@ -547,10 +635,9 @@
             </li>
           </ul>
         </div>
-        <!-- Footer Subscribe -->
         <div class="footer-subscribe">
           <p class="footer-subscribe__text">Подпишитесь на рассылку</p>
-          <form autocomplete="on">
+          <form class="footer-subscribe__form" autocomplete="on">
             <label class="subscribe-label">
               <input
                 class="field-subscribe"
@@ -650,8 +737,7 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
-
-    <!-- Forms beta -->
+    <script src="./js/menu.js"></script>
   </body>
 </html>
 <!-- Fin -->
