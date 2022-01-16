@@ -635,6 +635,31 @@ img {
   fill: var(--accent-color);
 }
 
+.mob-menu {
+  fill: var(--title-text-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  z-index: 100;
+  background-color: var(--white-bgc-text-color);
+}
+.mob-menu .container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+@media screen and (min-width: 768px) {
+  .mob-menu {
+    display: none;
+  }
+}
+
 .banner {
   padding-top: 200px;
   padding-bottom: 200px;
