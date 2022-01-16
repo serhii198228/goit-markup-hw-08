@@ -22,6 +22,7 @@
   .container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
 }
 
@@ -32,6 +33,9 @@
 
 .header-list {
   display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .header-list__item .link {
@@ -76,45 +80,114 @@
 }
 
 .header-contacts {
-  display: flex;
-}
-
-.contacts-item:not(:last-child) {
-  margin-right: 50px;
-  box-sizing: border-box;
-  margin-right: 30px;
+  display: none;
+  margin-left: auto;
+  @media screen and (min-width: 768px) {
+    display: block;
+    .header-contacts__item {
+      &:not(:last-child) {
+        @media screen and (min-width: 768px) {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .header-mail,
 .header-tel {
-  display: flex;
-  align-items: center;
   color: var(--primary-text-color);
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
-  line-height: 1.14;
+  line-height: 1.16;
   letter-spacing: 0.02em;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  text-decoration: none;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition: color var(--animation-duration-hw-05) var(--bezier-hw-05);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+}
+
+.icon-mail {
+  width: 14px;
+  height: 10px;
+  margin-right: 10px;
+  margin-top: 1px;
+  fill: currentColor;
+  @media screen and (min-width: 1200px) {
+    width: 16px;
+    height: 12px;
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+}
+.icon-tel {
+  width: 10px;
+  height: 14px;
+  margin-right: 10px;
+  fill: currentColor;
+  @media screen and (min-width: 1200px) {
+    width: 10px;
+    height: 16px;
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+}
+
+.header-mail {
+  @media screen and (min-width: 1200px) {
+    margin-right: 50px;
+  }
+}
+.menu-open,
+.menu-close {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: unset;
+  color: var(--white-bgc-text-color);
+  cursor: pointer;
   transition: color var(--animation-duration-hw-05) var(--bezier-hw-05);
   &:hover,
   &:focus {
     color: var(--accent-color);
   }
 }
-
-.icon-mail,
-.icon-tel {
-  margin-right: 10px;
-  fill: currentColor;
+.menu-open {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
-.header-mail {
-  margin-right: 50px;
+.menu-close {
+  position: absolute;
+  right: 15px;
+  top: -40px;
 }
 
-.header-contacts {
-  display: flex;
-  margin-left: auto;
+.icon-menu-burger,
+.icon-menu-close {
+  fill: var(--title-text-color);
+  transition: fill var(--animation-duration-hw-05) var(--bezier-hw-05);
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
 }
