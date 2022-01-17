@@ -733,28 +733,77 @@ img {
 }
 
 .banner {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  text-align: center;
+  max-width: 1600px;
+  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   background: var(--hero-footer-bgc);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg-main.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto;
+  background-size: cover;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/img-hero.jpg");
+}
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .banner {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/img-hero@2x.jpg");
+  }
+}
+@media screen and (min-width: 768px) {
+  .banner {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet/img-hero.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .banner {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet/img-hero@2x.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .banner {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/desktop/img-hero.jpg");
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .banner {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/desktop/img-hero@2x.jpg");
+  }
 }
 
 .banner-container {
-  width: 696px;
+  width: 100px;
   margin: 0 auto;
 }
-
-.banner-content {
-  text-align: center;
-  font-size: 44px;
+@media screen and (min-width: 768px) {
+  .banner-container {
+    padding-left: 204px;
+    padding-right: 204px;
+  }
+}
+.banner__title {
+  font-size: 26px;
   font-weight: 900;
-  line-height: 1.36;
+  line-height: 1.62;
   text-transform: uppercase;
   color: var(--white-bgc-text-color);
+  text-align: center;
   letter-spacing: 0.06em;
+  margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 360px;
+}
+@media screen and (min-width: 1200px) {
+  .banner__title {
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
+  }
 }
 
 .button-order {
