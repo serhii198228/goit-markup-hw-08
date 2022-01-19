@@ -54,13 +54,27 @@
   
   .button-group {
     display: flex;
-    margin-bottom: 50px;
-    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    margin-top: -15px;
+    justify-content: left;
+      @media screen and (min-width: 768px) {
+        flex-basis: calc(100% / 3 - 30px);
+        justify-content: center;
+        margin-bottom: 30px;
+      }
     
-  }
+      @media screen and (min-width: 1200px) {
+        display: flex;
+        margin-bottom: 50px;
+        justify-content: center;
+        flex-basis: calc(100% / 6 - 30px);
+      }
+    }
   
   .group-item {
+    margin-top: 15px;
     display: flex;
-    margin-left: 6px;
+    margin-right: 8px;
     transition: color var(--animation-duration-hw-05) var(--bezier-hw-05);
   }

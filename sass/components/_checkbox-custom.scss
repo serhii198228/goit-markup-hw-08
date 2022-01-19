@@ -10,7 +10,7 @@
 .checkbox-field__label {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   margin-bottom: 30px;
   text-align: center;
   cursor: pointer;
@@ -29,15 +29,31 @@
 }
   
 .checkbox-field__text {
-  @include font-normal;
   font-family: Roboto;
   font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
   color: var(--primary-text-color);
+    @media screen and (min-width: 1200px) {
+    @include font-normal;
+    font-family: Roboto;
+    font-style: normal;
+  }
 }
   
 .checkbox-field__link {
-  @include font-normal;
   font-family: Roboto;
   font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
   color: var(--accent-color);
+    @media screen and (min-width: 1200px) {
+    @include font-normal;
+    font-family: Roboto;
+    font-style: normal;
+    }
 }
