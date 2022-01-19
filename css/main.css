@@ -295,9 +295,6 @@ img {
 .icon-send {
   fill: var(--white-bgc-text-color);
   position: absolute;
-  align-items: center;
-  justify-content: center;
-  margin-left: 10px;
 }
 
 .container-join {
@@ -458,29 +455,6 @@ img {
     margin-bottom: 50px;
   }
 }
-@media screen and (min-width: 1200px) {
-  .section__title {
-    color: var(--title-text-color);
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 28px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
-    margin-bottom: 30px;
-  }
-}
-@media screen and (min-width: 1200px) and (min-width: 1200px) {
-  .section__title {
-    font-size: 36px;
-    line-height: 1.16;
-    font-weight: 700;
-    letter-spacing: 0.03em;
-    margin-bottom: 50px;
-  }
-}
-
 .web {
   display: flex;
   color: var(--accent-color);
@@ -933,7 +907,7 @@ img {
 
 .features {
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 70px;
 }
 @media screen and (min-width: 1200px) {
   .features {
@@ -1270,7 +1244,7 @@ img {
   letter-spacing: 0.03em;
   text-decoration: none;
   font-style: normal;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .mail-footer {
